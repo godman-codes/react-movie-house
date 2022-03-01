@@ -41,12 +41,12 @@ export const useHomeFetch = () => {
       if (!searchTerm) {
          const sessionState = isPersistedState("homeState");
          if (sessionState) {
-            console.log("grabbing from session storage");
+            // console.log("grabbing from session storage");
             setState(sessionState);
             return;
          }
       }
-      console.log("grabbing from API");
+      // console.log("grabbing from API");
       setState(initialState);
       fetchMovies(1, searchTerm);
    }, [searchTerm]);
