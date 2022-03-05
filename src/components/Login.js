@@ -9,7 +9,7 @@ import Button from "./Button";
 import { Wrapper } from "./Login.styles";
 
 //context
-import { Context, context } from "../Context";
+import { Context } from "../Context";
 
 const Login = () => {
    const [username, setUserName] = useState("");
