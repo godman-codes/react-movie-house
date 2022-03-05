@@ -3,7 +3,7 @@ import { useNavigate } from "react-router-dom";
 //context
 import { Context } from "../Context";
 const Logout = () => {
-   const [user, setUser] = useContext(Context);
+   const [setUser] = useContext(Context);
 
    const navigate = useNavigate();
    useEffect(() => {
