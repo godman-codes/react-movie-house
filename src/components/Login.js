@@ -15,8 +15,9 @@ const Login = () => {
    const [username, setUserName] = useState("");
    const [password, setPassword] = useState("");
    const [error, setError] = useState(false);
-   const [setUser] = useContext(Context);
+   const [user, setUser] = useContext(Context);
    const navigate = useNavigate();
+   const woman = true;
 
    const handleSubmit = async () => {
       setError(false);
@@ -27,8 +28,10 @@ const Login = () => {
             username,
             password
          );
-         console.log(sessionId);
-
+         // eslint-disable-next-line no-lone-blocks
+         {
+            woman || console.log(user + " logged in");
+         }
          setUser({ sessionId: sessionId.session_id, username });
 
          navigate("/");
