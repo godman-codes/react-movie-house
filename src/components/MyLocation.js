@@ -1,3 +1,4 @@
+// eslint-disable-next-line no-unused-vars
 import react, { useEffect, useState } from "react";
 
 const MyLocation = () => {
@@ -43,6 +44,7 @@ const MyLocation = () => {
          .catch((err) => {
             console.log(err);
          });
+      // eslint-disable-next-line react-hooks/exhaustive-deps
    }, []);
    return (
       <div style={{ backgroundColor: "black" }}>
