@@ -8,6 +8,7 @@ import Movie from "./components/Movie";
 import NotFound from "./components/Notfound";
 import Login from "./components/Login";
 import Logout from "./components/Logout";
+import MyLocation from "./components/MyLocation";
 //Context
 import UserProvider from "./Context";
 // styles
@@ -23,6 +24,7 @@ const App = () => (
             <Route path="/logout" element={<Logout />} />
             <Route path="/:movieId" element={<Movie />} />
             <Route path="/*" element={<NotFound />} />
+            <Route path="/location" element={<MyLocation />} />
          </Routes>
          <GlobalStyle />
       </UserProvider>
